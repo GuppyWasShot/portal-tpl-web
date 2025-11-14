@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tentang | PortalTPL</title>
+</head>
+    <style>
+        /* Main Content */
+        .main-content {
+            padding: 120px 80px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            font-size: 48px;
+            color: #412358;
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+
+        .page-title .highlight {
+            color: #e91e8c;
+        }
+
+        /* FAQ Container */
+        .faq-container {
+            max-width: 900px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            background: white;
+            cursor: pointer;
+            font-weight: 600;
+            color: #412358;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+            font-size: 18px;
+        }
+
+        .faq-question:hover {
+            background: #f9f9f9;
+        }
+
+        .faq-toggle {
+            font-size: 24px;
+            color: #666;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 30px 25px 30px;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            margin-bottom: 15px;
+        }
+
+        .faq-answer ul {
+            margin-top: 10px;
+            padding-left: 25px;
+        }
+
+        .faq-answer li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            header, .main-content, footer {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .page-title {
+                font-size: 32px;
+            }
+
+            .faq-question {
+                font-size: 16px;
+                padding: 20px;
+            }
+
+            .faq-answer {
+                padding: 0 20px;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 0 20px 20px 20px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="/front/img/logo.svg" alt="Logo TPL">
+            <span>Portal<em>TPL</em></span>
+        </div>
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#showcase">Showcase</a>
+            <a href="#faq">FAQ</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 class="page-title">FAQ Portal <span class="highlight">TPL</span></h1>
+
+        <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    Apa itu TPL?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>TPL Vokasi IPB adalah program studi Teknologi Rekayasa Perangkat Lunak di Sekolah Vokasi IPB University, yang menghasilkan Sarjana Terapan dengan fokus pada pembuatan dan pengelolaan perangkat lunak. Lulusannya memiliki kemampuan yang meliputi siklus hidup pengembangan sistem, analisis data, pengembangan multimedia, serta kemampuan techno-socio-entrepreneurial dan kerja sama tim. Program ini secara khusus mendukung penerapan teknologi di bidang pertanian, kelautan, dan biosains tropika.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    Apa yang dipelajari diTPL?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Mahasiswa akan mempelajari:</p>
+                    <ul>
+                        <li>Pemrograman (Web, Mobile, Desktop)</li>
+                        <li>Desain UI/UX</li>
+                        <li>Basis Data</li>
+                        <li>Analisis dan Perancangan Sistem</li>
+                        <li>Cloud Computing</li>
+                        <li>DevOps Dasar</li>
+                        <li>Manajemen Proyek Perangkat Lunak</li>
+                        <li>Kewirausahaan Teknologi</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    Gelar apa yang diperoleh setelah lulus dari TPL?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Lulusan TPL mendapatkan gelar Sarjana Terapan (S.Tr.Kom.).</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    Siapa Kaprodi TPL?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Medhanita Dewi Renanti, S.Kom, M.Kom</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div style="background: #412358; width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px; font-weight: bold;">T</div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Tautan</h3>
+                <p>IPB University<br>Sekolah Vokasi IPB University</p>
+            </div>
+            <div class="footer-section">
+                <h3>Alamat & Kontak</h3>
+                <p>Jl. Kumbang No.14, Kelurahan Babakan,<br>Kecamatan Bogor Tengah, Kota Bogor, Jawa<br>Barat 16128</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2025 Portal TPL - All Rights Reserved</div>
+            <div class="social-icons">
+                <a href="#">📷</a>
+                <a href="#">🔗</a>
+            </div>
+        </div>
+    </footer>
+
+        <script>
+        // FAQ Accordion functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                faqItems.forEach(faq => faq.classList.remove('active'));
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
