@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mata Kuliah | Portal TPL</title>
+<style>
+    
+    .hero {
+        padding-top: 150px; 
+        padding-bottom: 50px;
+        text-align: center; 
+        background: linear-gradient(135deg, #e8d9f5 0%, #d4c5eb 100%); 
+        color: #333;
+    }
+    
+    .hero h1 {
+        font-size: 48px; 
+        margin-bottom: 10px;
+        color: #412358; /* Primary Base Color */
+    }
+
+    .hero h1 .highlight {
+        color: #E30081; /* Secondary Base Color */
+    }
+
+    .hero p {
+        font-size: 16px;
+        color: #666;
+    }
+
+  
+    .container-content { 
+        max-width: 1100px; 
+        margin: 0 auto;
+        padding: 40px 80px; 
+        background: white; 
+    }
+
+    .semester-section {
+        border-radius: 15px;
+        padding: 30px; 
+        margin-bottom: 40px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08); 
+        border: 1px solid #f1f3f5; 
+    }
+
+    .semester-section h2 {
+        color: #412358; 
+        margin-bottom: 25px; 
+        font-size: 32px; 
+        border-bottom: 2px solid #e8d9f5; 
+        padding-bottom: 15px;
+        text-align: left; 
+    }
+
+    /* Styling Tabel */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden; 
+    }
+
+    thead {
+        background: #f1f3f5; 
+    }
+
+    th{
+        padding: 18px 15px; 
+        text-align: center; 
+        font-weight: 700;
+        color: #495057; 
+        border-bottom: 1px solid #c2b8cb; 
+        border-right: 1px solid #e0e0e0; 
+    }
+
+    th:last-child {
+        border-right: none; 
+    }
+
+    td {
+        padding: 15px; 
+        border-bottom: 1px solid #eee; 
+        color: #495057; 
+        text-align: left; 
+        border-right: 1px solid #f9f9f9; 
+    }
+
+    td:last-child {
+        border-right: none; 
+    }
+
+   
+    td:nth-child(1),
+    td:nth-child(3) {
+        text-align: center;
+    }
+
+    tr:last-child td {
+        border-bottom: none; 
+    }
+
+    tbody tr:hover {
+        background: #f9f9f9;
+    }
+
+    tfoot {
+        background: #e8d9f5; 
+        font-weight: 700;
+        color: #412358;
+    }
+
+    tfoot td {
+        padding: 18px 15px; 
+        border-bottom: none;
+        border-top: 1px solid #c2b8cb; 
+        font-size: 1.1em; 
+        border-right: 1px solid #c2b8cb; 
+    }
+
+    tfoot td:last-child {
+        border-right: none;
+    }
+
+    
+    tfoot td:first-child {
+        text-align: left;
+    }
+
+    tfoot td:nth-child(2) {
+    text-align: center;  
+    }
+
+    @media (max-width: 768px) {
+        .container-content {
+            padding: 20px;
+        }
+        .hero {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .hero h1 {
+            font-size: 36px;
+        }
+        .semester-section h2 {
+            font-size: 24px;
+        }
+        table {
+            font-size: 0.8rem;
+        }
+        th, td, tfoot td {
+            padding: 10px 8px; 
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-circle">T</div> 
+            <span>Portal<em>TPL</em></span>
+        </div>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="cari-karya.html">Showcase</a>
+            <a href="faq.html">FAQ</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mata <span class="highlight">Kuliah</span></h1>
+            <p>Daftar Mata Kuliah Prodi Teknologi Rekayasa Perangkat Lunak</p>
+        </div>
+    </section>
+
+    <div class="container-content">
+        
+        <div class="semester-section">
+            <h2>Semester 1</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kode MK</th>
+                        <th>Nama Mata Kuliah</th>
+                        <th>SKS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>TPL1101</td><td>Berpikir Komputasional</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1102</td><td>Dasar Pemrograman</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL2101</td><td>Logika Informatika</td><td>3(2-1)</td></tr>
+                    <tr><td>SVI110</td><td>Bahasa Inggris</td><td>2(1-1)</td></tr>
+                    <tr><td>SVI1101</td><td>Pendidikan Agama Islam</td><td>3(2-1)</td></tr>
+                    <tr><td>SVI1109</td><td>Bahasa Indonesia</td><td>2(1-1)</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td>16(7-9)</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="semester-section">
+            <h2>Semester 2</h2>
+            <table>
+                <thead><tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr></thead>
+                <tbody>
+                    <tr><td>TPL1107</td><td>Matematika Terapan</td><td>3(2-1)</td></tr>
+                    <tr><td>TPL1109</td><td>Algoritma dan Struktur Data</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1105</td><td>Teknologi Multimedia</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL2102</td><td>Perancangan Web</td><td>3(2-1)</td></tr>
+                    <tr><td>TPL1207</td><td>Probabilitas dan Statistika</td><td>2(1-1)</td></tr>
+                    <tr><td>SVI1107</td><td>Pendidikan Pancasila</td><td>1(1-0)</td></tr>
+                    <tr><td>SVI1108</td><td>Pendidikan Kewarganegaraan</td><td>2(1-1)</td></tr>
+                    <tr><td>MNI1101</td><td>Pertanian Inovatif</td><td>2(2-0)</td></tr>                
+                </tbody>
+                <tfoot><tr><td colspan="2">Total</td><td>19(10-9)</td></tr></tfoot>
+            </table>
+        </div>
+
+        <div class="semester-section">
+            <h2>Semester 3</h2>
+            <table>
+                <thead><tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr></thead>
+                <tbody>
+                    <tr><td>TPL1112</td><td>Rekayasa Kebutuhan Perangkat Lunak</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1202</td><td>Matematika Informatika</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1103</td><td>Komunikasi Data dan Jaringan</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL2201</td><td>Pengalaman Pengguna</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1206</td><td>Analisis dan Perancangan Perangkat Lunak</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1111</td><td>Sistem Basis Data</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL2202</td><td>Keamanan Perangkat Lunak</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1110</td><td>Pemrograman Berorientasi Objek</td><td>3(1-2)</td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="2">Total</td><td>24(9-15)</td></tr></tfoot>
+            </table>
+        </div>
+
+        <div class="semester-section">
+            <h2>Semester 4</h2>
+            <table>
+                <thead><tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr></thead>
+                <tbody>
+                    <tr><td>TPL1209</td><td>Sistem informasi</td><td>2(1-1)</td></tr>
+                    <tr><td>TPL1205</td><td>Komputasi Awan</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1210</td><td>Teknologi Virtual</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1212</td><td>Pengembangan Karakter dan Etika Profesi Bidang Teknologi Informasi</td><td>2(1-1)</td></tr>
+                    <tr><td>TPL2306</td><td>Thecnopreneurship</td><td>2(1-1)</td></tr>
+                    <tr><td>TPL1203</td><td>Pemrogaman Web</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1204</td><td>Pemrogaman Mobile</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1301</td><td>Analasis dan Visualisasi Data</td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1304</td><td>Teknik Penambangan Data</td><td>3(1-2)</td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="2">Total</td><td>24(9-15)</td></tr></tfoot>
+            </table>
+        </div>
+
+        <div class="semester-section">
+            <h2>Semester 5</h2>
+            <table>
+                <thead><tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr></thead>
+                <tbody>
+                    <tr><td>TPL1303</td><td>Manajemen Proyek Teknologi </td><td>2(1-1)</td></tr>
+                    <tr><td>TPL1302</td><td>Pemrosesan Citra Terapan </td><td>3(1-2)</td></tr>
+                    <tr><td>TPL1309</td><td>Teknologi Big Data </td><td>2(1-1)</td></tr>
+                    <tr><td>TPL1211</td><td>Sistem Informasi Geografis </td><td>2(1-1)</td></tr>
+                    <tr><td>TPL2310</td><td>Visual Komputer Cerdas </td><td>2(1-1)</td></tr>
+                    <tr><td>TPL1305</td><td>Pengujian dan Pemjaminan Kualitas Perangkat Lunak </td><td>2(1-1)</td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="2">Total</td><td>17(6-11)</td></tr></tfoot>
+            </table>
+        </div>
+              
+
+        <div class="semester-section">
+            <h2>Semester 6</h2>
+            <table>
+                <thead><tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr></thead>
+                <tbody>
+                    <tr><td>-</td><td>Enchirement Course</td><td>22(0-22)</td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="2">Total</td><td>22(0-22)</td></tr></tfoot>
+            </table>
+        </div>
+
+
+        <div class="semester-section">
+            <h2>Semester 7</h2>
+            <table>
+                <thead><tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr></thead>
+                <tbody>
+                    <tr><td>SVI2401</td><td>Immersive Program</td><td>14(0-14)</tr>
+                    <tr><td>SVI24012</td><td>Work Plan</td><td>1(0-1)</td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="2">Total</td><td>15(0-15)</td></tr></tfoot>
+            </table>
+        </div>
+              
+
+        <div class="semester-section">
+            <h2>Semester 8</h2>
+            <table>
+                <thead><tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr></thead>
+                <tbody>
+                    <tr><td>SVI2403</td><td>Seminar</td><td>1(0-1)</td></tr>
+                    <tr><td>SVI2404</td><td>Laporan Proyek Akhir</td><td>6(0-6)</td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="2">Total</td><td>7(0-7)</td></tr></tfoot>
+            </table>
+        </div>
+              
+    </div> <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="logo-circle" style="width: 100px; height: 100px; font-size: 32px;">T</div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Tautan</h3>
+                <p>IPB University<br>Sekolah Vokasi IPB University</p>
+            </div>
+            <div class="footer-section">
+                <h3>Alamat & Kontak</h3>
+                <p>Jl. Kumbang No.14, Kelurahan Babakan,<br>Kecamatan Bogor Tengah, Kota Bogor, Jawa<br>Barat 16128</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2025 Portal TPL - All Rights Reserved</div>
+            <div class="social-icons">
+                <a href="#" style="color: #412358;">📷</a>
+                <a href="#" style="color: #412358;">🔗</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
