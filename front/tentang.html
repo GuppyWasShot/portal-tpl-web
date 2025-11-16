@@ -204,13 +204,14 @@
             <img src="/front/img/logo.svg" alt="Logo TPL">
             <span>Portal<em>TPL</em></span>
         </div>
-        <nav>
+        <nav id="nav-menu">
             <a href="index.html">Beranda</a>
             <a href="cari-karya.html">Showcase</a>
             <a href="faq.html">FAQ</a>
             <a href="tentang.html">Tentang</a>
             <a href="kontak.html">Kontak</a>
         </nav>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
     </header>
 
     <!-- Hero Section -->
@@ -334,6 +335,21 @@
     </footer>
 
     <script>
+        // Header scroll effect
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            if (window.scrollY > 10) header.classList.add("scrolled");
+            else header.classList.remove("scrolled");
+        });
+
+        // Toggle menu
+        const toggleBtn = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        toggleBtn.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+
         // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

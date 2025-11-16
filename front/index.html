@@ -17,15 +17,16 @@
             <img src="/front/img/logo.svg" alt="Logo TPL">
             <span>Portal<em>TPL</em></span>
         </div>
-        <nav>
+        <nav id="nav-menu">
             <a href="#beranda">Beranda</a>
             <a href="#showcase">Showcase</a>
             <a href="#faq">FAQ</a>
             <a href="tentang.html">Tentang</a>
             <a href="kontak.html">Kontak</a>
         </nav>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
     </header>
-<main>
+
     <!-- Hero Section -->
     <section class="hero" id="beranda">
         <div class="hero-content">
@@ -129,7 +130,7 @@
             </div>
         </div>
         <div class="view-all">
-            <button class="btn-view-all">Lihat Semua Proyek</button>
+            <a href="cari-karya.html"><button class="btn-view-all">Lihat Semua Proyek</button></a> 
         </div>
     </section>
 
@@ -196,7 +197,6 @@
     <section class="cta">
         <h2>Syntax Error, <span class="highlight">Compile Lagi.</span></h2>
     </section>
-</main>
 
     <!-- Footer -->
     <footer id="kontak">
@@ -259,6 +259,21 @@
 
     <script>
         new Image().src = "/front/img/bg-hero.png";
+
+        // Header scroll effect
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            if (window.scrollY > 10) header.classList.add("scrolled");
+            else header.classList.remove("scrolled");
+        });
+
+        // Toggle menu
+        const toggleBtn = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        toggleBtn.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
 
         // FAQ Accordion
         const faqItems = document.querySelectorAll('.faq-item');
