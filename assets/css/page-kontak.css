@@ -1,0 +1,347 @@
+/* ===== Bagian: Halaman Kontak ===== */
+body.page-kontak .contact-hero {
+    background: linear-gradient(135deg, #f3e9ff 0%, #e1cef9 55%, #d3b1f7 100%);
+    padding: var(--hero-padding-top) var(--hero-padding-x) var(--hero-padding-bottom);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    color: #2d1b69;
+}
+
+body.page-kontak .contact-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body.page-kontak .contact-hero h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    color: #2d1b69;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+body.page-kontak .contact-hero h1 .highlight {
+    color: #e30081;
+}
+
+body.page-kontak .contact-hero p {
+    color: #5a4c76;
+    margin-bottom: 30px;
+    font-size: clamp(15px, 2vw, 16px);
+}
+
+body.page-kontak .main-content {
+    padding: 80px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+body.page-kontak .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+/* Contact Info Cards */
+body.page-kontak .contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+body.page-kontak .contact-card {
+    background: white;
+    padding: 35px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-small);
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    transition: all 0.3s;
+}
+
+body.page-kontak .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(233, 30, 140, 0.15);
+}
+
+body.page-kontak .contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #e8d9f5;
+}
+
+body.page-kontak .contact-icon svg {
+    width: 30px;
+    height: 30px;
+    stroke: #412358;
+}
+
+body.page-kontak .contact-info h3 {
+    color: #412358;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+body.page-kontak .contact-info p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+body.page-kontak .contact-info a {
+    color: #E30081;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+body.page-kontak .contact-info a:hover {
+    color: #412358;
+}
+
+/* Contact Form */
+body.page-kontak .contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-small);
+}
+
+/* Form alerts use utilities: .form-alert, .form-alert-success, .form-alert-error, .form-alert-info */
+
+body.page-kontak .form-alert {
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    border: 1px solid transparent;
+}
+
+body.page-kontak .form-alert.is-success {
+    background: #e6f6ee;
+    border-color: #a5dec4;
+    color: #1f7a4d;
+}
+
+body.page-kontak .form-alert.is-error {
+    background: #fdecea;
+    border-color: #f5c2bc;
+    color: #b21f1f;
+}
+
+body.page-kontak .form-alert.is-info {
+    background: #f6ecff;
+    border-color: #e0c7ff;
+    color: #412358;
+}
+
+body.page-kontak .contact-form h2 {
+    color: #412358;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+body.page-kontak .contact-form .subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+body.page-kontak .form-group {
+    margin-bottom: 25px;
+}
+
+body.page-kontak .form-group label {
+    display: block;
+    color: #412358;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+body.page-kontak .form-group input,
+body.page-kontak .form-group textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: var(--radius-md);
+    font-size: 15px;
+    font-family: inherit;
+    transition: all 0.3s;
+}
+
+body.page-kontak .form-group input:focus,
+body.page-kontak .form-group textarea:focus {
+    outline: none;
+    border-color: #E30081;
+}
+
+body.page-kontak .form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+body.page-kontak .btn-submit {
+    width: 100%;
+    background: white;
+    color: #E30081;
+    padding: 16px 40px;
+    border: 2px solid #E30081;
+    border-radius: var(--radius-2xl);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+body.page-kontak .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(233, 30, 140, 0.3);
+    background: #E30081;
+    color: white;
+}
+
+/* Map Section */
+body.page-kontak .map-section {
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-small);
+    margin-bottom: 60px;
+}
+
+body.page-kontak .map-section h2 {
+    color: #412358;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+body.page-kontak .map-container {
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(135deg, #e8d9f5 0%, #d4c5eb 100%);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #412358;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+body.page-kontak .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: var(--radius-lg);
+}
+
+@media (max-width: 992px) {
+    body.page-kontak .main-content {
+        padding: 60px 40px;
+    }
+
+    body.page-kontak .content-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    body.page-kontak .main-content {
+        padding: 40px 20px;
+    }
+
+    body.page-kontak .content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    body.page-kontak .contact-hero h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    body.page-kontak .contact-hero p {
+        font-size: 15px;
+    }
+
+    body.page-kontak .contact-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px;
+    }
+
+    body.page-kontak .contact-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    body.page-kontak .contact-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    body.page-kontak .contact-form {
+        padding: 32px 24px;
+    }
+
+    body.page-kontak .contact-form h2 {
+        font-size: 24px;
+    }
+
+    body.page-kontak .map-section {
+        padding: 32px 24px;
+    }
+
+    body.page-kontak .map-section h2 {
+        font-size: 24px;
+    }
+
+    body.page-kontak .map-container {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    body.page-kontak .contact-hero h1 {
+        font-size: 28px;
+    }
+
+    body.page-kontak .main-content {
+        padding: 30px 16px;
+    }
+
+    body.page-kontak .contact-card {
+        padding: 24px 20px;
+    }
+
+    body.page-kontak .contact-info h3 {
+        font-size: 18px;
+    }
+
+    body.page-kontak .contact-info p {
+        font-size: 14px;
+    }
+
+    body.page-kontak .contact-form {
+        padding: 24px 20px;
+    }
+
+    body.page-kontak .map-container {
+        height: 300px;
+    }
+}

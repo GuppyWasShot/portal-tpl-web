@@ -1,0 +1,511 @@
+/* ===== Bagian: Halaman Detail Karya ===== */
+body.page-detail .main-content {
+    padding: 190px 40px 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+body.page-detail .content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+/* ===== Bagian: Kolom Kiri ===== */
+body.page-detail .left-column {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-small);
+}
+
+body.page-detail .project-image {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #a8b5f0 0%, #c8b5f0 100%);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+body.page-detail .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body.page-detail .project-title {
+    font-size: 36px;
+    color: #2d1b69;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+body.page-detail .project-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+body.page-detail .tag {
+    background: #e8d9f5;
+    color: #2d1b69;
+    padding: 8px 18px;
+    border-radius: var(--radius-xl);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+body.page-detail .section-title {
+    font-size: 24px;
+    color: #e91e8c;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+body.page-detail .description-text {
+    color: #666;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+body.page-detail .action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+body.page-detail .btn {
+    padding: 12px 30px;
+    border-radius: var(--radius-full);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+body.page-detail .btn-outline {
+    background: transparent;
+    color: #2d1b69;
+    border: 2px solid #2d1b69;
+}
+
+body.page-detail .btn-outline:hover {
+    background: #2d1b69;
+    color: white;
+}
+
+/* ===== Bagian: Kolom Kanan ===== */
+body.page-detail .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+body.page-detail .info-card,
+body.page-detail .rating-section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-small);
+}
+
+body.page-detail .info-card h3,
+body.page-detail .rating-title {
+    font-size: 24px;
+    color: #e91e8c;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+body.page-detail .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+body.page-detail .info-item:last-child {
+    margin-bottom: 0;
+}
+
+body.page-detail .info-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+body.page-detail .info-content h4 {
+    color: #2d1b69;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+body.page-detail .info-content p,
+body.page-detail .info-content li {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+body.page-detail .info-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+body.page-detail .creator-list {
+    margin: 0.35rem 0 0;
+    padding-left: 1.25rem;
+    color: #4b5563;
+}
+
+body.page-detail .creator-list li {
+    list-style: disc;
+    margin-bottom: 0.35rem;
+}
+
+/* ===== Bagian: Penilaian ===== */
+body.page-detail .stars {
+    display: flex;
+    gap: 8px;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+body.page-detail .star {
+    color: #ffd700;
+}
+
+body.page-detail .star.empty {
+    color: #e0e0e0;
+}
+
+body.page-detail .rating-form {
+    margin-top: 30px;
+}
+
+body.page-detail .rating-form h4 {
+    color: #2d1b69;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+body.page-detail .star-input {
+    display: flex;
+    gap: 8px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+body.page-detail .star-input span {
+    color: #e0e0e0;
+    transition: color 0.2s;
+}
+
+body.page-detail .star-input span:hover,
+body.page-detail .star-input span.active {
+    color: #ffd700;
+}
+
+body.page-detail .btn-submit {
+    background: #2d1b69;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: var(--radius-full);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+body.page-detail .btn-submit:hover {
+    background: #1f1349;
+    transform: scale(1.05);
+}
+
+body.page-detail .btn-submit:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+body.page-detail .rating-summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+body.page-detail .rating-summary-value {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d1b69;
+}
+
+body.page-detail .rating-summary svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffd700;
+}
+
+body.page-detail .rating-summary-count {
+    font-size: 14px;
+    color: #666;
+}
+
+body.page-detail .rating-empty {
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+body.page-detail .rating-empty p {
+    color: #999;
+    margin: 0;
+    font-size: 14px;
+}
+
+body.page-detail .alert-success,
+body.page-detail .alert-error {
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+body.page-detail .alert-success {
+    background: #e8f5e9;
+    border: 1px solid #4caf50;
+}
+
+body.page-detail .alert-success p {
+    color: #2e7d32;
+    font-weight: 600;
+    margin: 0;
+    font-size: 14px;
+}
+
+body.page-detail .alert-error {
+    background: #ffebee;
+    border: 1px solid #f44336;
+}
+
+body.page-detail .alert-error p {
+    color: #c62828;
+    font-weight: 600;
+    margin: 0;
+    font-size: 14px;
+}
+
+body.page-detail .rating-note {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+body.page-detail .rating-update-form {
+    margin-bottom: 10px;
+}
+
+body.page-detail .btn-full {
+    width: 100%;
+}
+
+body.page-detail .btn-submit.btn-full {
+    margin-bottom: 10px;
+}
+
+body.page-detail .btn-cancel-rating {
+    width: 100%;
+    background: #f44336;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+body.page-detail .btn-cancel-rating:hover {
+    background: #d32f2f;
+    transform: scale(1.02);
+}
+
+/* ===== Bagian: Galeri Foto ===== */
+body.page-detail .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+body.page-detail .gallery-item {
+    aspect-ratio: 16/9;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 3px solid transparent;
+}
+
+body.page-detail .gallery-item:hover {
+    transform: scale(1.05);
+    border-color: #2d1b69;
+}
+
+body.page-detail .gallery-item.active {
+    border-color: #e91e8c;
+}
+
+body.page-detail .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body.page-detail .main-image-container {
+    position: relative;
+    margin-bottom: 24px;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio (9/16 * 100 = 56.25%) */
+    background-color: #000000;
+    /* Padding hitam */
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+body.page-detail .main-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Gambar tidak terpotong, padding hitam muncul di sisi jika perlu */
+    transition: opacity 0.3s;
+}
+
+/* ===== Bagian: Responsif Detail ===== */
+@media (max-width: 1024px) {
+    body.page-detail .content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    body.page-detail .main-content {
+        padding: 160px 30px 80px;
+    }
+
+    body.page-detail .left-column {
+        order: 1;
+    }
+
+    body.page-detail .right-column {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    body.page-detail .main-content {
+        padding: 140px 20px 60px;
+    }
+
+    body.page-detail .left-column,
+    body.page-detail .right-column {
+        padding: 24px;
+    }
+
+    body.page-detail .project-title {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    body.page-detail .project-image {
+        height: 300px;
+    }
+
+    body.page-detail .main-image-container {
+        padding-bottom: 56.25%;
+        margin-bottom: 20px;
+    }
+
+    body.page-detail .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 8px;
+    }
+
+    body.page-detail .action-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    body.page-detail .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    body.page-detail .info-card,
+    body.page-detail .rating-section {
+        padding: 24px;
+    }
+
+    body.page-detail .section-title {
+        font-size: 20px;
+    }
+
+    body.page-detail .description-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    body.page-detail .main-content {
+        padding: 130px 16px 50px;
+    }
+
+    body.page-detail .left-column,
+    body.page-detail .right-column {
+        padding: 20px;
+    }
+
+    body.page-detail .project-title {
+        font-size: 24px;
+    }
+
+    body.page-detail .project-image {
+        height: 250px;
+    }
+
+    body.page-detail .tag {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    body.page-detail .star-input {
+        font-size: 28px;
+    }
+
+    body.page-detail .btn-submit {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}

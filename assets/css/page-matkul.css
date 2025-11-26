@@ -1,0 +1,244 @@
+/* ===== Bagian: Halaman Mata Kuliah ===== */
+body.page-matkul {
+    background: #ffffff;
+}
+
+body.page-matkul .hero {
+    padding: var(--hero-padding-top) var(--hero-padding-x) var(--hero-padding-bottom);
+    text-align: center;
+    background: linear-gradient(135deg, #f3e9ff 0%, #e1cef9 55%, #d3b1f7 100%);
+    color: #2d1b69;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+body.page-matkul .hero h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    margin-bottom: 10px;
+    color: #2d1b69;
+    font-weight: 700;
+}
+
+body.page-matkul .hero h1 .highlight,
+body.page-matkul .hero .highlight {
+    color: #e30081;
+}
+
+body.page-matkul .hero p {
+    font-size: clamp(15px, 2vw, 16px);
+    color: #5a4c76;
+}
+
+body.page-matkul .container-content {
+    max-width: 1100px;
+    margin: 60px auto 100px;
+    padding: 0 40px;
+    background: transparent;
+}
+
+body.page-matkul .semester-section {
+    border-radius: var(--radius-2xl);
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow-hover);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: #ffffff;
+}
+
+body.page-matkul .semester-section h2 {
+    color: #412358;
+    margin-bottom: 25px;
+    font-size: 32px;
+    border-bottom: 2px solid #e8d9f5;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+/* Styling Tabel */
+body.page-matkul table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+body.page-matkul .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+    -webkit-overflow-scrolling: touch;
+}
+
+body.page-matkul .table-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+body.page-matkul .table-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(65, 35, 88, 0.35);
+    border-radius: 8px;
+}
+
+body.page-matkul .table-wrapper table {
+    min-width: 640px;
+}
+
+body.page-matkul thead {
+    background: #f1f3f5;
+}
+
+body.page-matkul th {
+    padding: 18px 15px;
+    text-align: center;
+    font-weight: 700;
+    color: #495057;
+    border-bottom: 1px solid #c2b8cb;
+    border-right: 1px solid #e0e0e0;
+}
+
+body.page-matkul th:last-child {
+    border-right: none;
+}
+
+body.page-matkul table th:nth-child(1),
+body.page-matkul table td:nth-child(1) {
+    width: 120px;
+    /* Kode MK */
+}
+
+body.page-matkul table th:nth-child(3),
+body.page-matkul table td:nth-child(3) {
+    width: 120px;
+    /* SKS */
+}
+
+body.page-matkul table th:nth-child(2),
+body.page-matkul table td:nth-child(2) {
+    width: auto;
+}
+
+body.page-matkul td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #495057;
+    text-align: left;
+    border-right: 1px solid #f9f9f9;
+}
+
+body.page-matkul td:last-child {
+    border-right: none;
+}
+
+body.page-matkul td:nth-child(1),
+body.page-matkul td:nth-child(3) {
+    text-align: center;
+}
+
+body.page-matkul tr:last-child td {
+    border-bottom: none;
+}
+
+body.page-matkul tbody tr:hover {
+    background: #f9f9f9;
+}
+
+body.page-matkul tfoot {
+    background: #e8d9f5;
+    font-weight: 700;
+    color: #412358;
+}
+
+body.page-matkul tfoot td {
+    padding: 18px 15px;
+    border-bottom: none;
+    border-top: 1px solid #c2b8cb;
+    font-size: 1.1em;
+    border-right: 1px solid #c2b8cb;
+}
+
+body.page-matkul tfoot td:last-child {
+    border-right: none;
+}
+
+body.page-matkul tfoot td:first-child {
+    text-align: left;
+}
+
+body.page-matkul tfoot td:nth-child(2) {
+    text-align: center;
+}
+
+body.page-matkul .matkul-tag {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #f1f3f5;
+    color: #555;
+    font-size: 12px;
+}
+
+@media (max-width: 992px) {
+    body.page-matkul .container-content {
+        padding: 30px 40px;
+    }
+
+    body.page-matkul .semester-section {
+        padding: 24px;
+    }
+
+    body.page-matkul .table-wrapper table {
+        min-width: 520px;
+    }
+}
+
+@media (max-width: 768px) {
+    body.page-matkul .container-content {
+        padding: 20px;
+    }
+
+    body.page-matkul .semester-section h2 {
+        font-size: 24px;
+    }
+
+    body.page-matkul table {
+        font-size: 0.85rem;
+    }
+
+    body.page-matkul th,
+    body.page-matkul td,
+    body.page-matkul tfoot td {
+        padding: 12px 10px;
+    }
+
+    body.page-matkul .table-wrapper {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    body.page-matkul .hero h1 {
+        font-size: 28px;
+    }
+
+    body.page-matkul .semester-section {
+        padding: 18px;
+    }
+
+    body.page-matkul .semester-section h2 {
+        font-size: 22px;
+    }
+
+    body.page-matkul table {
+        font-size: 0.8rem;
+    }
+
+    body.page-matkul th,
+    body.page-matkul td,
+    body.page-matkul tfoot td {
+        padding: 10px 8px;
+    }
+}

@@ -1,0 +1,22 @@
+# ===== TIMEZONE CONFIGURATION =====
+# Set default timezone to Jakarta (WIB - GMT+7)
+php_value date.timezone "Asia/Jakarta"
+
+# Alternative jika php_value tidak didukung (uncomment jika perlu):
+# SetEnv TZ Asia/Jakarta
+
+# ===== REWRITE ENGINE (jika diperlukan untuk routing) =====
+# RewriteEngine On
+
+# ===== ERROR HANDLING (opsional) =====
+# Uncomment untuk production:
+# php_flag display_errors Off
+# php_flag log_errors On
+
+# ===== SESSION CONFIGURATION (opsional) =====
+# php_value session.cookie_httponly 1
+# php_value session.cookie_secure 0
+
+# ===== FILE UPLOAD LIMITS (sesuaikan jika perlu) =====
+# php_value upload_max_filesize 10M
+# php_value post_max_size 10M

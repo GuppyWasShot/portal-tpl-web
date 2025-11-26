@@ -1,0 +1,7 @@
+# Allow access to uploaded files
+Options -Indexes
+<FilesMatch "\.(pdf|doc|docx|zip|rar|txt)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
